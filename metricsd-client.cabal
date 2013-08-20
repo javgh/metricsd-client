@@ -11,5 +11,8 @@ cabal-version:       >=1.8
 
 library
   exposed-modules:     Network.Metricsd.Client
-  build-depends:       base == 4.*, network == 2.3.*
+  build-depends:       base == 4.*
+                       -- Wheezy: 4.5.0.0 (ghc)
+                       , network == 2.3.*
+                       -- Wheezy: 2.3.0.13 (libghc-network-dev)
   ghc-options:         -O -Wall
